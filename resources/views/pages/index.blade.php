@@ -188,12 +188,6 @@
     <a class="btn py-2 px-3 text-white button-pipaluk button--inverted" style="font-size: 16px" roll="button" data-toggle="modal" data-target="#email{{$row->id}}"><i class="far fa-envelope pr-1"></i> Email </a>
                                             </div>
                                         </div>
-                        <!--------'wishlist' using ajax (niche JS ache)-------->
-                                <button class="addwishlist" data-id="{{ $row->id }}" title="Add to wishlist">
-                                    <div class="product_fav">
-                                    <i class="fa fa-heart text-danger"></i>
-                                    </div>
-                                </button>
 
                             <!---------(Discount equation)-------->
                                         <ul class="product_marks">
@@ -283,13 +277,6 @@
                                         </div>
                                     </div>
 
-                            <!------'Wishlist' using Toastr--------->
-                                    <a href="{{ URL::to('add/wishlist/tostr/'.$row->id) }}" title="Add to wishlist">
-                                        <div class="product_fav">
-                                            <i class="fa fa-heart text-danger"></i>
-                                        </div>
-                                    </a>
-
                             <!---------(Discount equation)-------->
                                     <ul class="product_marks">
                                         @if($row->discount_price == NULL)
@@ -376,13 +363,6 @@
     <a class="btn py-2 px-3 text-white button-pipaluk button--inverted" style="font-size: 16px" roll="button" data-toggle="modal" data-target="#email{{$row->id}}"><i class="far fa-envelope pr-1"></i> Email </a>
                                     </div>
                                 </div>
-
-                        <!------ 'Wishlist' using Toastr--------->
-                                <a href="{{ URL::to('add/wishlist/tostr/'.$row->id) }}" title="Add to wishlist">
-                                    <div class="product_fav">
-                                        <i class="fa fa-heart text-danger"></i>
-                                    </div>
-                                </a>
 
                         <!---------(Discount equation)-------->
                                 <ul class="product_marks">
