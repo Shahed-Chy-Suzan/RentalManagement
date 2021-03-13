@@ -24,8 +24,6 @@
 ============================================================================
 
 
-//------------//-------------//----------------//-------------//------------
-
 		##-----------------ADMIN's Work-----------------##
 
 	(1) To Upload a property in website, At first Admin have to go "All_Properties"--->>"Pending_Properties"
@@ -33,7 +31,20 @@
 	(3) After making sure all of them options are OK as we expected then Click "Update",
 	(4) After Updating this property, Our next task is to go to "VIEW" option of that property, If all of the options are OK, Then now we can "UPLOAD" this peoperty in website by clicking "UPLOAD" or we may cancell a property also by clicking "CANCEL" button.
 
-//------------//-------------//----------------//-------------//------------
+
+============================================================================
+
+		##-----------------For-Sample_Image-----------------##
+
+	--Download_Link:  https://drive.google.com/drive/folders/19gqLwXphfo02-mO0UEKVQbh-s0Dm4aTC?usp=sharing
+
+
+
+
+
+
+
+
 
 
 
