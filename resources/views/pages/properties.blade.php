@@ -11,7 +11,7 @@
         <div class="row ml-3 pl-3 py-5">
 
 <!-----------------------Start Left_Side_Bar----------------------------->
-            <div class="col-md-2 align-self-start top_bar_contact_item" style="padding-top: 140px; margin-right:-40px;">
+            <div class="col-md-2 align-self-start top_bar_contact_item d-none d-lg-block" style="padding-top: 140px; margin-right:-40px;">
                 <!-- Sidebar -->
     <!------SubCity list------------>
                 <div>
@@ -152,8 +152,8 @@
             <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->discount_price}} / month<span style="font-size: 17px"><del><b>BDT {{$row->price}}</b></del></span></div>
         @endif
     @endif
-    
-        <div class="col-md-12 ml-0 pl-1" style="font-size: 20px">
+
+        <div class="col-md-12 ml-0 pl-1 d-none d-lg-block" style="font-size: 20px">
             <i class="fas fa-bed pr-4" title="Bed Room"> {{$row->bedroom}} </i> |
             <i class="fas fa-bath p-4" title="Bath Room"> {{$row->bathroom}} </i> |
             <i class="fas fa-car p-4" title="Parking"> {{$row->parking}} </i> |
@@ -181,7 +181,7 @@
     </div>
 
         <!--------------------Pagination--------------------->
-                <div class="p-5" style="margin-left:400px; font-size: 20px;">
+                <div class="py-5 ml-md-auto ml-sm-auto ml-lg-5 pl-lg-5" style="font-size: 20px;">
                     {{ $property->links() }}
                 </div>
 

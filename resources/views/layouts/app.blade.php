@@ -44,19 +44,19 @@
 @endphp
 
 
-<div class="top_bar">
+<div class="top_bar d-none d-lg-block">
     <div class="container">
         <div class="row">
             <div class="col d-flex flex-row">
                 <!--class=top_bar_contact_item(rm)-->
-                <div class="more moreApp mt-2 "><div class="top_bar_icon"><a href="{{ url('/') }}" class="button-pipaluk button--inverted px-2"> <img src="{{asset('public/frontend/logo/logo3.jpg')}}" class="img-fluid rounded-circle" width="65px" height="65px"> <span class="text-primary h5" >HouseRental</span></a></div></div>
+                <div class="more moreApp mt-2"><div class="top_bar_icon"><a href="{{ url('/') }}" class="button-pipaluk button--inverted px-2"> <img src="{{asset('public/frontend/logo/logo3.jpg')}}" class="img-fluid rounded-circle" width="65px" height="65px"> <span class="text-primary h5" >HouseRental</span></a></div></div>
 
                 <div class="top_bar_content ml-auto">
 
 <!----User login/Register----->
                     <div class="top_bar_user">
                         @guest
-                            <div class="more moreApp"><a href="{{ route('login') }}" class="button-pipaluk button--inverted px-4 py-2" style="font-size:16px; color:black;">
+                            <div class="more moreApp mt-2"><a href="{{ route('login') }}" class="button-pipaluk button--inverted px-4 py-2" style="font-size:16px; color:black;">
                                 <div class="user_icon"><img src="{{ asset('public/frontend/images/user.svg') }}"></div>
                                     Register/Login
                                 </a>
@@ -102,7 +102,7 @@
 @endphp
 
 <!-------------- Search ----------------->
-    <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right">
+    <div class="col-lg-6 col-12 order-lg-2 order-3 text-lg-left text-right d-none d-lg-block">
         <div class="header_search">
             <div class="header_search_content" style="left: 81px;">
                 <div class="header_search_form_container">
@@ -176,11 +176,9 @@
                             <div class="col-md-12 col-sm-12">
                                 <ul class="social-links">
                                     <li title="Follow us on Facebook"><a href="{{ $setting->facebook }}"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li title="Follow us on Linkedin"><a href="{{ $setting->linkedin }}"><i class="fab fa-linkedin-in"></i></a></li>
                                     <li title="Follow us on Twitter"><a href="{{ $setting->twitter }}"><i class="fab fa-twitter"></i></a></li>
                                     <li title="Follow us on Youtube"><a href="{{ $setting->youtube }}"><i class="fab fa-youtube"></i></a></li>
                                     <li title="Follow us on Instagram"><a href="{{ $setting->instagram }}"><i class="fab fa-instagram"></i></a></li>
-                                    <li title="Follow us on Pinterest"><a href="{{ $setting->pinterest }}"><i class="fab fa-pinterest"></i></a></li>
                                     <li title="Follow us on Whatsapp"><a href="{{ $setting->whatsapp }}"><i class="fab fa-whatsapp"></i></a></li>
                                 </ul>
                             </div>
