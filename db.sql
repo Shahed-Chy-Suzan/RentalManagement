@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 13, 2021 at 10:58 AM
+-- Generation Time: Mar 18, 2021 at 04:19 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -36,16 +36,11 @@ CREATE TABLE `admins` (
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `places` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `coupon` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `blogs` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `all_properties` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `orders` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `reports` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `user_role` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `newsletter` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `contact_messages` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `site_setting` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `database_backup` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `type` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp()
@@ -55,9 +50,8 @@ CREATE TABLE `admins` (
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`id`, `name`, `phone`, `email`, `email_verified_at`, `password`, `remember_token`, `places`, `coupon`, `blogs`, `all_properties`, `orders`, `reports`, `user_role`, `newsletter`, `contact_messages`, `site_setting`, `database_backup`, `type`, `created_at`, `updated_at`) VALUES
-(3, 'Admin', '01711212121', 'admin@gmail.com', NULL, '$2y$10$Wo43r5R2lxeZuFlxJH8hu.wbUPbvhkho0DtNxg6bnTtC7.IlJwF0e', 'xkBrGgFDNuOZyUyfendF2tqIbeGUqGq0BzTJWDEIuJawwc7N8l6XtTb76k7p', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '2020-02-21 04:49:25', '2020-04-25 10:25:32'),
-(4, 'Arman', '01877638277', 'arman@gmail.com', NULL, '$2y$10$qs1oDV2HhydK2Jzo57kdnOw9TQHasF2iVBEpLI8uDlWkkJtTTx3a6', NULL, '1', '1', NULL, '1', NULL, '1', NULL, NULL, NULL, NULL, '1', '2', '2020-05-06 20:51:01', '2020-05-06 20:51:01');
+INSERT INTO `admins` (`id`, `name`, `phone`, `email`, `email_verified_at`, `password`, `remember_token`, `places`, `all_properties`, `orders`, `newsletter`, `contact_messages`, `site_setting`, `type`, `created_at`, `updated_at`) VALUES
+(6, 'Admin', '01711212121', 'admin@gmail.com', NULL, '$2y$10$Wo43r5R2lxeZuFlxJH8hu.wbUPbvhkho0DtNxg6bnTtC7.IlJwF0e', NULL, '1', '1', '1', '1', '1', '1', '1', '2021-03-13 10:49:52', '2021-03-13 10:49:52');
 
 -- --------------------------------------------------------
 
@@ -79,13 +73,13 @@ CREATE TABLE `cities` (
 INSERT INTO `cities` (`id`, `city_name`, `created_at`, `updated_at`) VALUES
 (1, 'Chattogram', NULL, NULL),
 (2, 'Dhaka', NULL, NULL),
-(3, 'Rajshahi', '2020-04-29 14:01:47', '2020-04-29 14:01:47'),
-(4, 'Khulna', '2020-04-29 14:05:08', '2020-04-29 14:05:08'),
-(5, 'Barisal', '2020-04-29 14:05:22', '2020-04-29 14:05:22'),
-(6, 'Sylhet', '2020-04-29 14:05:31', '2020-04-29 14:05:31'),
-(7, 'Comilla', '2020-04-29 14:05:49', '2020-04-29 14:05:49'),
-(8, 'Rangpur', '2020-04-29 14:06:04', '2020-04-29 14:06:04'),
-(10, 'Mymensingh', '2020-04-30 19:02:32', '2020-04-30 19:02:32');
+(3, 'Rajshahi', '2021-03-11 14:05:08', '2021-03-14 14:05:08'),
+(4, 'Khulna', '2021-03-11 14:01:08', '2021-03-14 14:06:08'),
+(5, 'Barisal', '2021-03-11 14:01:22', '2021-03-14 14:07:08'),
+(6, 'Sylhet', '2021-03-11 14:01:31', '2021-03-14 14:04:08'),
+(7, 'Comilla', '2021-03-11 14:01:49', '2021-03-14 14:05:07'),
+(8, 'Rangpur', '2021-03-11 14:01:04', '2021-03-14 14:05:04'),
+(10, 'Mymensingh', '2021-03-10 19:01:32', '2021-03-14 14:05:02');
 
 -- --------------------------------------------------------
 
@@ -112,18 +106,18 @@ CREATE TABLE `contacts` (
 --
 
 INSERT INTO `contacts` (`id`, `name`, `email`, `phone`, `subject`, `message`, `status`, `review`, `date`, `created_at`, `updated_at`) VALUES
-(2, 'Irfan Chowdhury', 'irfan@gmail.com', '01877777777', NULL, 'Hey!\r\nI have found a renter for my propertiy, Please delete my property from your website which i sent you the previous month.', '1', 0, '30-05-20', '2020-05-08 10:56:34', '2020-05-08 10:56:34'),
-(3, 'Arman', 'arman@gmail.com', '0181111112', 'Peoperties', 'Hey! Good Morning. How can edit my property add request form which is already sent to you? I had put there my old email address. I want to replace it with my new email account, Please response me to solve this issue. Thank You.', '1', 0, '08-05-20', '2020-05-08 15:31:38', '2020-05-08 15:31:38'),
-(4, 'Helal Uddin', 'helal@gmail.com', '01811112212', 'Payment', 'Hi! Take my Salam.\r\n\r\nIs there any online payment system available to you?', '1', 0, '08-05-20', '2020-05-08 15:34:06', '2020-05-08 15:34:06'),
-(5, 'Shahed Sultan', 'sultan@gmail.com', '22333455325', NULL, 'Assalamu Alaikum.\r\n\r\nYou guys are awesome, All thanks to \'BariWala\' for taking this kind of unique step and made our life easy,', '0', 0, '08-05-20', '2020-05-08 15:53:11', '2020-05-08 15:53:11'),
-(6, 'Junayed Abdullah', 'junayed@gmail.com', '22333455325', 'Review', 'Nice to meet you guys!\r\nSo nice behaviour, Wish you good luck!', '0', 0, '08-05-20', '2020-05-08 18:20:07', '2020-05-08 18:20:07'),
-(7, 'Nazim Uddin', 'Nazimhabib77@gmail.com', '01833000325', NULL, 'Is there anyone available?', '0', 0, '21-09-20', '2020-09-20 19:51:50', '2020-09-20 19:51:50'),
-(8, 'jahed H Hossen', 'jahad@gmail.com', '+8801733455325', NULL, 'Bariwala.com does its job well, makes it easy to rent. Listing is easy, with just a few simple steps. Highly recommend on behalf of me.', '0', 1, '18-11-20', '2020-11-18 11:38:35', '2020-11-18 11:38:35'),
-(9, 'Sazzad Hossen', 'sazzad@gmail.com', '+441733455325', NULL, 'I recommend using Bariwala.com if you want to quickly and easily list a property or apartment for rent or sell. It is simple to use and will get your listing in front of a larger audience.', '0', 1, '18-11-20', '2020-11-18 14:04:25', '2020-11-18 14:04:25'),
-(10, 'Ariful Islam', 'aa@gmail.com', '+441733455325', NULL, 'I have found a much higher quality of renter by using this process. All thanks to Bariwala.com', '0', 1, '18-11-20', '2020-11-18 14:04:43', '2020-11-18 14:04:43'),
-(11, 'Kamrul Hasan', 'kh@gmail.com', '+8801833455325', NULL, 'I think the Bariwala.com website could use some upgrades. It can be a little slow and glitchy sometimes.', '1', 0, '18-11-20', '2020-11-18 14:05:16', '2020-11-18 14:05:16'),
-(12, 'Md Ariful Islam', 'arif@gmail.com', '01877766677', NULL, 'Straight forward accurate information, never any discrepancies between what I list through Appfolio and what Rent.com states.', '0', 1, '18-11-20', '2020-11-18 14:06:06', '2020-11-18 14:06:06'),
-(13, 'Md Arman', 'arman@gmail.com', '01733455325', NULL, 'This site has a great design and features trending cities and pet-friendly apartments.', '0', 1, '18-11-20', '2020-11-18 14:07:07', '2020-11-18 14:07:07');
+(2, 'Irfan Chowdhury', 'irfan@gmail.com', '01877777777', NULL, 'Hey!\r\nI have found a renter for my propertiy, Please delete my property from your website which i sent you the previous month.', '1', 0, '03-03-21', '2021-03-03 10:56:34', '2021-03-04 10:56:34'),
+(3, 'Arman', 'arman@gmail.com', '0181111112', 'Peoperties', 'Hey! Good Morning. How can edit my property add request form which is already sent to you? I had put there my old email address. I want to replace it with my new email account, Please response me to solve this issue. Thank You.', '1', 0, '02-02-21', '2021-02-02 15:31:38', '2021-02-03 15:31:38'),
+(4, 'Helal Uddin', 'helal@gmail.com', '01811112212', 'Payment', 'Hi! Take my Salam.\r\n\r\nIs there any online payment system available to you?', '1', 0, '01-03-21', '2021-03-01 15:34:06', '2021-03-02 15:34:06'),
+(5, 'Shahed Sultan', 'sultan@gmail.com', '22333455325', NULL, 'Assalamu Alaikum.\r\n\r\nYou guys are awesome, All thanks to \'BariWala\' for taking this kind of unique step and made our life easy,', '0', 0, '05-03-21', '2021-03-05 15:53:11', '2021-03-06 15:53:11'),
+(6, 'Junayed Abdullah', 'junayed@gmail.com', '22333455325', 'Review', 'Nice to meet you guys!\r\nSo nice behaviour, Wish you good luck!', '0', 0, '08-03-21', '2021-03-07 18:20:07', '2021-03-10 18:20:07'),
+(7, 'Nazim Uddin', 'Nazimhabib77@gmail.com', '01833000325', NULL, 'Is there anyone available?', '0', 0, '05-03-21', '2021-03-04 19:51:50', '2021-03-11 19:51:50'),
+(8, 'jahed H Hossen', 'jahad@gmail.com', '+8801733455325', NULL, 'Bariwala.com does its job well, makes it easy to rent. Listing is easy, with just a few simple steps. Highly recommend on behalf of me.', '0', 1, '07-03-21', '2021-03-07 11:38:35', '2021-03-11 11:38:35'),
+(9, 'Sazzad Hossen', 'sazzad@gmail.com', '+441733455325', NULL, 'I recommend using Bariwala.com if you want to quickly and easily list a property or apartment for rent or sell. It is simple to use and will get your listing in front of a larger audience.', '0', 1, '03-03-21', '2021-03-03 14:04:25', '2021-03-04 14:04:25'),
+(10, 'Ariful Islam', 'aa@gmail.com', '+441733455325', NULL, 'I have found a much higher quality of renter by using this process. All thanks to Bariwala.com', '0', 1, '11-03-21', '2021-03-11 14:04:43', '2021-03-12 14:04:43'),
+(11, 'Kamrul Hasan', 'kh@gmail.com', '+8801833455325', NULL, 'I think the Bariwala.com website could use some upgrades. It can be a little slow and glitchy sometimes.', '1', 0, '18-02-21', '2021-02-18 14:05:16', '2021-02-19 14:05:16'),
+(12, 'Md Ariful Islam', 'arif@gmail.com', '01877766677', NULL, 'Straight forward accurate information, never any discrepancies between what I list through Appfolio and what Rent.com states.', '0', 1, '11-02-21', '2021-02-11 14:06:06', '2021-02-13 14:06:06'),
+(13, 'Md Arman', 'arman@gmail.com', '01733455325', NULL, 'This site has a great design and features trending cities and pet-friendly apartments.', '0', 1, '15-03-21', '2021-03-15 14:07:07', '2021-03-16 14:07:07');
 
 -- --------------------------------------------------------
 
@@ -235,9 +229,8 @@ CREATE TABLE `newsletters` (
 --
 
 INSERT INTO `newsletters` (`id`, `email`, `created_at`, `updated_at`) VALUES
-(1, 'admin2@gmail.com', '2020-05-02 16:31:44', '2020-05-02 16:31:44'),
-(2, 'shahed@gmail.com', '2020-05-02 16:33:33', '2020-05-02 16:33:33'),
-(3, 'sakil@gmail.com', '2020-11-02 02:28:20', '2020-11-02 02:28:20');
+(5, 'sazzad@gmail.com', '2021-03-13 10:27:50', '2021-03-13 10:27:50'),
+(6, 'sakil@gmail.com', '2021-03-13 10:28:00', '2021-03-13 10:28:00');
 
 -- --------------------------------------------------------
 
@@ -324,7 +317,7 @@ CREATE TABLE `sitesetting` (
 --
 
 INSERT INTO `sitesetting` (`id`, `phone_one`, `phone_two`, `email_one`, `email_two`, `company_name`, `address_one`, `address_two`, `logo`, `facebook`, `linkedin`, `twitter`, `youtube`, `instagram`, `pinterest`, `whatsapp`, `experience`, `project`, `award`, `clients`, `created_at`, `updated_at`) VALUES
-(1, '+(60) 999-98 00 99', '+(60) 999-98 00 98', 'support.chittagong@gmail.com', 'support.dhaka@gmail.com', 'HouseRental', '5th Floor,  Finlay Square, 2 no gate', '3rd Floor, Jamuna Future Park', NULL, 'www.facebook.com/houserental', 'www.linkedin.com/houserental', 'www.twitter.com/houserental', 'www.youtube.com/houserental', 'www.instagram.com/houserental', 'www.pinterest.com/houserental', 'www.whatsapp.com/houserental', '26', '300', '37', '276', '2020-05-06 08:42:38', '2020-05-06 08:42:38');
+(1, '01837373733', '01837373833', 'rental@gmail.com', 'rental@gmail.com', 'HouseRental', '5th Floor,  Finlay Square, 2 no gate', '3rd Floor, Jamuna Future Park', NULL, 'www.facebook.com/houserental', 'www.linkedin.com/houserental', 'www.twitter.com/houserental', 'www.youtube.com/houserental', 'www.instagram.com/houserental', 'www.pinterest.com/houserental', 'www.whatsapp.com/houserental', '26', '300', '37', '276', '2020-05-06 08:42:38', '2020-05-06 08:42:38');
 
 -- --------------------------------------------------------
 
@@ -394,8 +387,6 @@ CREATE TABLE `users` (
   `name` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `phone` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `provider` varchar(121) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `provider_id` varchar(121) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
@@ -407,10 +398,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `phone`, `provider`, `provider_id`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(2, 'user', 'user@gmail.com', '01878377565', NULL, NULL, '2020-04-25 04:59:02', '$2y$10$Q0v2cnf6.6ta6yH3xa5AeOnaaLpHhken44M1.PJjyFMlavQczz5Au', NULL, '2020-04-25 04:57:57', '2020-04-25 04:59:02'),
-(3, 'newuser', 'newuser@gmail.com', '01788888888', NULL, NULL, '2020-04-25 05:56:07', '$2y$10$OpwV3y4D2b1evPIyxRrR.OpEQTL4DxAxbBztgNipOkuWN9Ev9GLIy', NULL, '2020-04-25 05:34:51', '2020-04-25 05:59:17'),
-(10, 'Arman', 'arman@gmail.com', '01733455325', NULL, NULL, '2020-11-19 04:36:55', '$2y$10$efxqQTe3G2TWzvV9vNm7N.LgAPyXpVRQRso86enDnNUc.GLBUp146', NULL, '2020-11-19 04:35:57', '2020-11-19 04:36:55');
+INSERT INTO `users` (`id`, `name`, `email`, `phone`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(11, 'user', 'user@gmail.com', '01878377565', NULL, '$2y$10$Q0v2cnf6.6ta6yH3xa5AeOnaaLpHhken44M1.PJjyFMlavQczz5Au', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -650,7 +639,7 @@ ALTER TABLE `user_properties`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `cities`
@@ -686,7 +675,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `newsletters`
 --
 ALTER TABLE `newsletters`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `orders`
@@ -710,7 +699,7 @@ ALTER TABLE `subcities`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `user_properties`
