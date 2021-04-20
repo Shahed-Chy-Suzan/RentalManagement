@@ -69,7 +69,7 @@
             <div class="container">
                 <div class="col-lg-8 offset-lg-4 pt-5">
                     <div class="shadow-lg rounded" style=" background:#AC5488; opacity: .8">
-                        <h1 class="text-light p-3">Search properties for sale and rent in Bangladesh</h1>
+                        <h1 class="text-light p-3">Search properties for sale and rent in United Kingdom</h1>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
              <div class="container">
                 <div class="col-lg-8 offset-lg-4 pt-5">
                 <div class="shadow-lg rounded" style="background:#AC5488; opacity: .8">
-                    <h1 class="text-light p-3">Search properties for sale and rent in Bangladesh</h1>
+                    <h1 class="text-light p-3">Search properties for sale and rent in United Kingdom</h1>
                 </div>
                 </div>
                </div>
@@ -87,7 +87,7 @@
                   <div class="container">
                       <div class="col-lg-8 offset-lg-4 pt-5">
                         <div class="shadow-lg rounded" style=" background:#AC5488; opacity: .8">
-                            <h1 class="text-light p-3">Search properties for sale and rent in Bangladesh</h1>
+                            <h1 class="text-light p-3">Search properties for sale and rent in United Kingdom</h1>
                         </div>
                     </div>
                     </div>

@@ -76,8 +76,8 @@
                     <input type="text" class="form-control" name="area" id="bedromm" placeholder="Enter Area (sqft.)" required>
                 </div>
                 <div class="col-md-3 mb-3 pr-4">
-                    <label for="price">Price (৳) :</label>
-                    <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price (৳)" required>
+                    <label for="price">Price ($) :</label>
+                    <input type="text" class="form-control" name="price" id="price" placeholder="Enter Price ($)" required>
                 </div>
                 <div class="col-md-3 mb-3 pr-4">
                     <label for="floor">Floor Level :</label>

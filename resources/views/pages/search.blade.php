@@ -114,10 +114,10 @@ $searchCount=DB::table('user_properties')
 
 
     @if($row->discount_price == NULL)
-        <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->price}}</div>
+        <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->price}}</div>
     @else
-        <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->discount_price}}<span style="font-size: 17px"><del><b>BDT {{$row->price}}</b></del></span></div>
-        {{-- <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->discount_price}} / month<span style="font-size: 17px"><del><b>BDT {{$row->price}}</b></del></span></div> --}}
+        <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->discount_price}}<span style="font-size: 17px"><del><b>$ {{$row->price}}</b></del></span></div>
+        {{-- <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->discount_price}} / month<span style="font-size: 17px"><del><b>$ {{$row->price}}</b></del></span></div> --}}
     @endif
 
         <div class="col-md-12 ml-0 pl-1" style="font-size: 20px">

@@ -36,7 +36,7 @@
                   <th class="wd-5p">City Name</th>
                   <th class="wd-5p">Sub-City</th>
                   <th class="wd-5p">Image</th>
-                  <th class="wd-5p">Price (৳)</th>
+                  <th class="wd-5p">Price ($)</th>
                   <th class="wd-10p">Action</th>
                   <th class="wd-5p"></th>
                 </tr>
@@ -52,9 +52,9 @@
                   <td><img src="{{ URL::to($row->image_one) }}" height="40px;" width="45px;"></td>
                   {{-- <td>{{ $row->price }}</td> --}}
                     @if (isset($row->discount_price))
-                        <td>৳ {{ $row->discount_price }} (D)</td>
+                        <td>$ {{ $row->discount_price }} (D)</td>
                     @else
-                        <td>৳ {{ $row->price }}</td>
+                        <td>$ {{ $row->price }}</td>
                     @endif
                   <td>
                     @if($row->status==0 || $row->status==1 || $row->status==2)

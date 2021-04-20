@@ -60,7 +60,7 @@
                                         </div>
                                         @if($ht->discount_price == NULL)
                                         @else
-                                          <div class="deals_item_price_a ml-auto"><del>৳ {{ $ht->price }}</del></div>
+                                          <div class="deals_item_price_a ml-auto"><del>$ {{ $ht->price }}</del></div>
                                         @endif
                                     </div>
 
@@ -72,9 +72,9 @@
                                         </div>
 
                                         @if($ht->discount_price == NULL)
-                                          <div class="deals_item_price ml-auto" style="font-size: 18px">৳ {{ $ht->price }}</div>
+                                          <div class="deals_item_price ml-auto" style="font-size: 18px">$ {{ $ht->price }}</div>
                                         @else
-                                          <div class="deals_item_price ml-auto" style="font-size: 18px">৳ {{ $ht->discount_price }}</div>
+                                          <div class="deals_item_price ml-auto" style="font-size: 18px">$ {{ $ht->discount_price }}</div>
                                         @endif
                                     </div>
 
@@ -158,11 +158,11 @@
                                         </div>
 
                                         <div class="product_content">
-                                            {{-- <div class="product_price discount my-2">৳50,000<span><del>৳55,000</del></span></div> --}}
+                                            {{-- <div class="product_price discount my-2">$50,000<span><del>$55,000</del></span></div> --}}
                                             @if($row->discount_price == NULL)
-                                                <div class="product_price discount my-2"> ৳ {{ $row->price }}</div>
+                                                <div class="product_price discount my-2"> $ {{ $row->price }}</div>
                                             @else
-                                             <div class="product_price discount my-2"> ৳ {{ $row->discount_price }}<span><del><b> ৳ {{ $row->price }}</b></del></span></div>
+                                             <div class="product_price discount my-2"> $ {{ $row->discount_price }}<span><del><b> $ {{ $row->price }}</b></del></span></div>
                                             @endif
                                                 {{-- <div class="row align-items-center justify-content-start">
                                                     <span class="col-md-12"><small>Apartment For Rent</small></span>
@@ -253,9 +253,9 @@
 
                                     <div class="product_content">
                                         @if($row->discount_price == NULL)
-                                            <div class="product_price discount my-2"> ৳ {{ $row->price }}</div>
+                                            <div class="product_price discount my-2"> $ {{ $row->price }}</div>
                                         @else
-                                         <div class="product_price discount my-2"> ৳ {{ $row->discount_price }}<span><del><b> ৳ {{ $row->price }}</b></del></span></div>
+                                         <div class="product_price discount my-2"> $ {{ $row->discount_price }}<span><del><b> $ {{ $row->price }}</b></del></span></div>
                                         @endif
                                         <div class="row mb-0 pb-0">
                                             <div class="col-md-12 text-primary">
@@ -338,11 +338,11 @@
                                 </div>
 
                                 <div class="product_content">
-                                    {{-- <div class="product_price discount my-2">৳50,000<span><del>৳55,000</del></span></div> --}}
+                                    {{-- <div class="product_price discount my-2">$50,000<span><del>$55,000</del></span></div> --}}
                                     @if($row->discount_price == NULL)
-                                        <div class="product_price discount my-2"> ৳ {{ $row->price }}</div>
+                                        <div class="product_price discount my-2"> $ {{ $row->price }}</div>
                                     @else
-                                     <div class="product_price discount my-2"> ৳ {{ $row->discount_price }}<span><del><b> ৳ {{ $row->price }}</b></del></span></div>
+                                     <div class="product_price discount my-2"> $ {{ $row->discount_price }}<span><del><b> $ {{ $row->price }}</b></del></span></div>
                                     @endif
                                     <div class="row mb-0 pb-0">
                                         <div class="col-md-12 text-primary">

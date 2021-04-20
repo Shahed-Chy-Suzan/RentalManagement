@@ -153,7 +153,7 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="branch">
-                                            <h4 style="color: blue">Chittagong</h4>
+                                            <h4 style="color: blue">Birmingham</h4>
                                             <ul class="brance-details">
                                                 <li><i class="fa fa-phone"></i><a href="tel:{{ $setting->phone_one }}" style="color:black"> {{ $setting->phone_one }} </a></li>
                                                 <li><i class="far fa-envelope"></i><a href="mailto:{{ $setting->email_one }}" style="color:black"> {{ $setting->email_one }} </a></li>
@@ -163,7 +163,7 @@
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="branch">
-                                            <h4 style="color: blue">Dhaka</h4>
+                                            <h4 style="color: blue">London</h4>
                                             <ul class="brance-details">
                                                 <li><i class="fa fa-phone"></i><a href="tel:{{ $setting->phone_two }}" style="color:black"> {{ $setting->phone_two }} </a></li>
                                                 <li><i class="far fa-envelope"></i><a href="mailto:{{ $setting->email_two }}" style="color:black"> {{ $setting->email_two }} </a></li>

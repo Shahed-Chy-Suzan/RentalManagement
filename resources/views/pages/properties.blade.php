@@ -141,15 +141,15 @@
 
     @if($row->purpose=='Sale')
         @if($row->discount_price == NULL)
-            <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->price}}</div>
+            <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->price}}</div>
         @else
-            <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->discount_price}}<span style="font-size: 17px"><del><b>BDT {{$row->price}}</b></del></span></div>
+            <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->discount_price}}<span style="font-size: 17px"><del><b>$ {{$row->price}}</b></del></span></div>
         @endif
     @else
         @if($row->discount_price == NULL)
-            <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->price}} / month</div>
+            <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->price}} / month</div>
         @else
-            <div style="font-size: 25px" class="product_price discount my-0"> BDT {{$row->discount_price}} / month<span style="font-size: 17px"><del><b>BDT {{$row->price}}</b></del></span></div>
+            <div style="font-size: 25px" class="product_price discount my-0"> $ {{$row->discount_price}} / month<span style="font-size: 17px"><del><b>$ {{$row->price}}</b></del></span></div>
         @endif
     @endif
 
