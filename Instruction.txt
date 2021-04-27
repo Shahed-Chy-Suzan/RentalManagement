@@ -18,8 +18,8 @@
 	- password: admin
 
 //---Project_Run:---
-		- Frontend:-- http://localhost/HouseRental/
-		- Backend:-- http://localhost/HouseRental/admin
+		- Frontend:-- http://localhost/RentalManagement/
+		- Backend:-- http://localhost/RentalManagement/admin
 
 ============================================================================
 

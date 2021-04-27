@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2021 at 06:24 PM
+-- Generation Time: Apr 27, 2021 at 05:34 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -35,13 +35,6 @@ CREATE TABLE `admins` (
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `places` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `all_properties` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `orders` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `newsletter` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `contact_messages` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `site_setting` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `type` varchar(11) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -50,8 +43,8 @@ CREATE TABLE `admins` (
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`id`, `name`, `phone`, `email`, `email_verified_at`, `password`, `remember_token`, `places`, `all_properties`, `orders`, `newsletter`, `contact_messages`, `site_setting`, `type`, `created_at`, `updated_at`) VALUES
-(6, 'Admin', '01711212121', 'admin@gmail.com', NULL, '$2y$10$Wo43r5R2lxeZuFlxJH8hu.wbUPbvhkho0DtNxg6bnTtC7.IlJwF0e', NULL, '1', '1', '1', '1', '1', '1', '1', '2021-03-13 10:49:52', '2021-03-13 10:49:52');
+INSERT INTO `admins` (`id`, `name`, `phone`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(6, 'Admin', '01711212121', 'admin@gmail.com', NULL, '$2y$10$Wo43r5R2lxeZuFlxJH8hu.wbUPbvhkho0DtNxg6bnTtC7.IlJwF0e', NULL, '2021-03-13 10:49:52', '2021-03-13 10:49:52');
 
 -- --------------------------------------------------------
 
