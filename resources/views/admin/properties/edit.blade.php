@@ -98,11 +98,11 @@
                     <input type="text" class="form-control" name="area" value="{{ $property->area }}" id="bedromm" required>
                 </div>
                 <div class="col-md-4 mb-3 pr-4">
-                    <label for="price">Price ($) :</label>
+                    <label for="price">Price (£) :</label>
                     <input type="text" class="form-control" name="price" value="{{ $property->price }}" id="price" required>
                 </div>
                 <div class="col-md-4 mb-3 pr-4">
-                    <label for="price1">Discount Price ($) :</label>
+                    <label for="price1">Discount Price (£) :</label>
                     <input type="text" class="form-control" name="discount_price" value="{{ $property->discount_price }}" id="price1">
                 </div>
             </div>

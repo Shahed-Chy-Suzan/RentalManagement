@@ -92,15 +92,15 @@
         <!----Price---->
         @if($property->purpose=='Sale')
             @if($property->discount_price == NULL)
-                <div style="font-size: 26px" class="product_price discount my-0"> $ {{$property->price}}</div>
+                <div style="font-size: 26px" class="product_price discount my-0"> £ {{$property->price}}</div>
             @else
-                <div style="font-size: 26px" class="product_price discount my-0"> $ {{$property->discount_price}}<span style="font-size: 17px"><del><b>$ {{$property->price}}</b></del></span></div>
+                <div style="font-size: 26px" class="product_price discount my-0"> £ {{$property->discount_price}}<span style="font-size: 17px"><del><b>£ {{$property->price}}</b></del></span></div>
             @endif
         @else
             @if($property->discount_price == NULL)
-                <div style="font-size: 26px" class="product_price discount my-0"> $ {{$property->price}} / Month</div>
+                <div style="font-size: 26px" class="product_price discount my-0"> £ {{$property->price}} / Month</div>
             @else
-                <div style="font-size: 26px" class="product_price discount my-0"> $ {{$property->discount_price}} / Month<span style="font-size: 18px"><del><b>$ {{$property->price}}</b></del></span></div>
+                <div style="font-size: 26px" class="product_price discount my-0"> £ {{$property->discount_price}} / Month<span style="font-size: 18px"><del><b>£ {{$property->price}}</b></del></span></div>
             @endif
         @endif  <!----End Price---->
 
@@ -125,12 +125,12 @@
                       </tr>
                       <tr>
                           <td>Price :</td>
-                          <td>$ {{ $property->price }}</td>
+                          <td>£ {{ $property->price }}</td>
                       </tr>
                       <tr>
                           @if (isset($property->discount_price))
                             <td>Discount Price ({{ intval($discount) }}%) :</td>
-                            <td>$ {{ $property->discount_price }}</td>
+                            <td>£ {{ $property->discount_price }}</td>
                           @else
                             <td>Discount Price :</td>
                             <td>Not Available</td>

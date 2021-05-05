@@ -150,19 +150,19 @@
                         </tr>
                         <tr>
                             <th>Price :</th>
-                            <th>$ {{ $property->price }}</th>
+                            <th>£ {{ $property->price }}</th>
                         </tr>
                         <tr>
                             <th>Discount Price :</th>
-                            <th>$ {{ $property->discount_price }}</th>
+                            <th>£ {{ $property->discount_price }}</th>
                         </tr>
                         <tr>
                             <th>Service Charge :</th>
-                            <th>$ {{ $property->service_charge }}</th>
+                            <th>£ {{ $property->service_charge }}</th>
                         </tr>
                         <tr>
                             <th class="text-primary">Total Price :</th>
-                            <th class="text-primary">$ {{ number_format($property->total_price) }}</th>
+                            <th class="text-primary">£ {{ number_format($property->total_price) }}</th>
                         </tr>
 
          	    	</table>
